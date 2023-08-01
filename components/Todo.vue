@@ -1,27 +1,25 @@
 <template>
-  <v-container
-    class="fill-height todo-wrapper"
-    style="background-color: #2c4d57"
-    fluid
-  >
-    <div class="ma-auto">
-      <h1 class="title font-weight-bold text-center white--text">
-        Vue TODO List
-      </h1>
+  <v-container class="fill-height todo-wrapper" fluid>
+    <v-row justify="center">
+      <v-col cols="12" lg="6" md="8" sm="12">
+        <div class="title text-sm font-weight-bold text-center white--text">
+          Vue TODO List
+        </div>
 
-      <v-card class="mx-auto rounded-xl" width="700">
-        <!-- Header -->
-        <TodoHeader />
+        <v-card class="mx-auto rounded-xl">
+          <!-- Header -->
+          <TodoHeader />
 
-        <v-card-text>
-          <!-- Todo List -->
-          <TodoList />
-        </v-card-text>
+          <v-card-text>
+            <!-- Todo List -->
+            <TodoList />
+          </v-card-text>
 
-        <!-- Input -->
-        <TodoInput />
-      </v-card>
-    </div>
+          <!-- Input -->
+          <TodoInput />
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -35,7 +33,7 @@ export default {
 
 <style scoped>
 .title {
-  font-size: 60px !important;
+  font-size: 3rem !important;
   margin-bottom: 30px;
 }
 .todo-wrapper {
