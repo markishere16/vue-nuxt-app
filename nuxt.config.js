@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - todo-app',
-    title: 'todo-app',
+    titleTemplate: 'Todo App: Mark  Joshua Mandigma',
+    title: 'Todo App by: Mark  Joshua Mandigma',
     htmlAttrs: {
       lang: 'en'
     },
