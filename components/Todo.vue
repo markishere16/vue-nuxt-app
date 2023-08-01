@@ -5,7 +5,9 @@
     fluid
   >
     <div class="ma-auto">
-      <h1 class="title font-weight-bold text-center white--text">Vue TODO List</h1>
+      <h1 class="title font-weight-bold text-center white--text">
+        Vue TODO List
+      </h1>
 
       <v-card class="mx-auto rounded-xl" width="700">
         <!-- Header -->
@@ -24,15 +26,7 @@
 </template>
 
 <script>
-import TodoHeader from "./TodoHeader.vue";
-import TodoList from "./TodoList.vue";
-import TodoInput from "./TodoInput.vue";
 export default {
-  components: {
-    TodoHeader,
-    TodoInput,
-    TodoList,
-  },
   mounted() {
     this.$store.dispatch("initTodos");
   },
